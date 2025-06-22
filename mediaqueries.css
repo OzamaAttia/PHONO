@@ -1,0 +1,77 @@
+@media screen and (min-width: 1200px) {
+    :root {
+        --vw-screen: 768;
+    }
+    .landing .logos .logo4 {
+        right: -3%;
+    }
+    .landing .logos .logo3 {
+        left: -3%;
+    }
+}
+/* @media screen and (max-width: 1200px) {
+
+} */
+
+@media screen and (max-width: 992px) {
+    .landing .about h2 {
+        font-size: 4rem;
+    }
+    .landing .about .phono::after {
+        bottom: 25px;
+    }
+    .landing .about .info {
+        width: 85%;
+    }
+    .landing .logos .logo1 {
+        top: 20%;
+        left: 65%;
+    }
+}
+/* @media screen and (max-width: 968px) {
+
+} */
+
+@media screen and (max-width: 600px) {
+    :root {
+        --vw-screen: 375;
+    }
+    header {
+        padding: 10px 15px;
+    }
+    .landing .about h2 {
+        font-size: 3rem;
+    }
+    .landing .about .phono::after {
+        bottom: 15px;
+    }
+    .landing .about .info {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .landing .logos img {
+        width: 150px;
+    }
+    .landing .logos .logo4 {
+        bottom: -5.2%;
+        scale: 0.5;
+    }
+    .landing .icons img {
+        /* opacity: 0.2; */
+        width: 60px;
+    }
+}
+/* @media screen and (min-width: 600px) {
+} */
+
+@media screen and (max-width: 350px) {
+    header {
+        padding: 5px 10px;
+    }
+    .landing .about h2 {
+        font-size: 2rem;
+    }
+    .landing .about .phono::after {
+        bottom: 8px;
+    }
+}

@@ -1,0 +1,148 @@
+:root {
+    --vw-screen: 1440;
+    --main-background-color: #1f1d1d;
+    --main-color: #6f898b;
+    --main-text-color: #ffffff;
+    /* --sec-text-color: #ffffff; */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--main-background-color);
+    font-family: "Cairo", sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ------------HEADER------------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    /* background-color: #333; */
+}
+header .logo a {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul li {
+    list-style: none;
+    padding-left: 20px;
+}
+header ul li a {
+    position: relative;
+}
+header ul li a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--main-color);
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    scale: 0;
+}
+header ul li:hover a::after {
+    scale: 1;
+}
+
+/* ------------LANDING------------ */
+.landing {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--main-text-color);
+    position: relative;
+}
+
+.landing .about h2 {
+    font-size: 8vh;
+    font-size: 5rem;
+}
+.landing .about .phono {
+    color: var(--main-color);
+    position: relative;
+    transition: linear 0.35s;
+    cursor: pointer;
+}
+.landing .about .phono::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: 30px;
+    left: 0;
+    transition: linear 0.35s;
+    transform: translateX(-103%);
+}
+.landing .about h2:hover .phono::after {
+    transform: translateX(0);
+}
+.landing .about h2:hover .phono {
+    text-shadow: 0 0px 15px #6f898b45;
+}
+
+.landing .about .info {
+    font-size: 1rem;
+    padding: 10px 20px;
+    line-height: 25px;
+    width: 70%;
+    margin: auto;
+}
+
+/* .landing .cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+
+}
+.landing .cards .card {
+    background-color: #333;
+    padding: 10px 20px;
+    width: calc(80% / 2);
+    margin-top: 50px;
+}
+.landing .cards .card h4 {
+    text-align: left;
+    font-size: calc(26/var(--vw-screen)*100*1vw);
+    font-weight: 700;
+}
+.landing .cards .card .card_btn {
+    
+}
+.landing .cards .card .card_btn a {
+    font-size: 15px;
+    background-color: #555;
+    padding: 10px 15px;
+}
+.landing .cards .card1 {
+
+}
+.landing .cards .card2 {
+
+} */
+
+
